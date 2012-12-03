@@ -5,15 +5,12 @@
   <vendor email="jeanfrancois.im@gmail.com" url="http://jean-francois.im/">Jean-Francois Im</vendor>
 
   <description>
-      <p>This plugin adds an option to run IDEA in full screen mode, with no title bar. To use it, use Tools &gt; Toggle Fullscreen.</p>
-      <p>Considering this plugin disposes of the IDE frame and recreates it, it may break the UI/cause exceptions/steal your lunch money.</p>
+      This plugin adds an option to run IDEA in full screen mode, with no title bar. To use it, use Tools &gt; Toggle Fullscreen.
+      Considering this plugin disposes of the IDE frame and recreates it, it may break the UI/cause exceptions/steal your lunch money.
   </description>
 
   <change-notes>
-      <dl>
-          <dt>0.1</dt>
-          <dd>First plugin version</dd>
-      </dl>
+      0.1 First plugin version
   </change-notes>
 
   <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->

@@ -27,7 +27,6 @@ public class ToggleFullscreenAction extends AnAction {
                 public void run() {
                     frame.setUndecorated(false);
                     frame.setBounds(frame.getGraphicsConfiguration().getBounds());
-                    frame.getGraphicsConfiguration().getDevice().setFullScreenWindow(null);
                     frame.setVisible(true);
                 }
             });
@@ -37,7 +36,6 @@ public class ToggleFullscreenAction extends AnAction {
                 public void run() {
                     frame.setUndecorated(true);
                     frame.setBounds(frame.getGraphicsConfiguration().getBounds());
-                    frame.getGraphicsConfiguration().getDevice().setFullScreenWindow(frame);
                     frame.setVisible(true);
                 }
             });

@@ -1,0 +1,46 @@
+<idea-plugin version="2">
+  <id>im.jeanfrancois.ideaplugins.ideafullscreen</id>
+  <name>Fullscreen</name>
+  <version>0.1</version>
+  <vendor email="jeanfrancois.im@gmail.com" url="http://jean-francois.im/">Jean-Francois Im</vendor>
+
+  <description>
+      <p>This plugin adds an option to run IDEA in full screen mode, with no title bar. To use it, use Tools &gt; Toggle Fullscreen.</p>
+      <p>Considering this plugin disposes of the IDE frame and recreates it, it may break the UI/cause exceptions/steal your lunch money.</p>
+  </description>
+
+  <change-notes>
+      <dl>
+          <dt>0.1</dt>
+          <dd>First plugin version</dd>
+      </dl>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="107.105"/>
+
+  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action class="im.jeanfrancois.ideaplugins.ideafullscreen.ToggleFullscreenAction" id="ToggleFullscreenAction" text="Toggle Fullscreen">
+        <add-to-group group-id="ToolsMenu" relative-to-action="GenerateJavadoc" anchor="after"/>
+    </action>
+  </actions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+</idea-plugin>
